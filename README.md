@@ -2,10 +2,13 @@
 
 
 Linux/mac:
+
 Copiar y pegar en su consola de comandos la siguiente instruccion:
 
 make run Proyecto1.c
+
 Windows:
+
 Puede copiar y pegar nuestro codigo en esta página: https://www.onlinegdb.com/online_c_compiler
 
 
