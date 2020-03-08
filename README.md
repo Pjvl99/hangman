@@ -2,8 +2,9 @@
 
 
 Linux/mac:
+Copiar y pegar en su consola de comandos la siguiente instruccion:
 
-Para correr nuestro proyecto solo tiene que usar "make run Proyecto1.c"
+make run Proyecto1.c
 
 
 
