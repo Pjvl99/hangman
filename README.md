@@ -1,13 +1,8 @@
 # hangman
 
-Esta es la base para su proyecto
 
-# Para inicar realice [FORK](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
+Linux/mac:
 
-DEBE HACER UN [FORK DEL PROYECTO!](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
-
-
-Linux/mac
 Para correr nuestro proyecto solo tiene que usar "make run Proyecto1.c"
 
 
