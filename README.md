@@ -7,36 +7,19 @@ Esta es la base para su proyecto
 DEBE HACER UN [FORK DEL PROYECTO!](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
 
 
-# Como correr su proyecto
-
-<!---
-Llene esta seccion con "como correr su proyecto"
--->
-
-<!---
-yo le proveo una forma facil de compilar y es usando 'make'
-
-make => compilara su codigo
-
-make run => compilara su codigo y lo correra
-
-! OJO que solo funcionaria en systemas *NIX, No se si Windows seria soportado.
---->
+Linux/mac
+Para correr nuestro proyecto solo tiene que usar "make run Proyecto1.c"
 
 
-```
-puede utilizar una seccion de codigo
-```
 
 # Extra Information
 
-```
-Agregue aqui lo que usted considere como extra
-```
+1. Iniciara el juego
+2. Vera las instrucciones
+3. Vera quienes lo hicieron
+4. Saldra del juego
 
 # About
-
-<!---
-Llene esta seccion con "Su nombre y correo"
---->
+Hecho por Pablo Josué Velásquez López - pablovelasquez@ufm.edu
+Carmen María de Lourdes Xiloj Pol - carmenxiloj@ufm.edu 
 
