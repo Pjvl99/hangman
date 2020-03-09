@@ -9,11 +9,11 @@ void clearscreen()
 #define MAX_WORDS 23
 const char* get_random_word(void);
 const char *word_collection[MAX_WORDS]= {
-                    "este","es","un","banco","de",
-                    "palabras","sientase","en","libertad",
-                    "de","agregar","la","cantidad","de",
-                    "palabras","que","usted","desee","hasta",
-                    "un","maximo","de","pollo"
+                    "almuerzo","hola","estufa","banco","escrito",
+                    "mariposa","trunks","dragon","libertad",
+                    "perro","dar","amor","hack","madre",
+                    "padre","pera","veinte","desayuno","cena",
+                    "cobra","rosa","raul","terminar"
                     };
 const char* get_random_word(void){
     // seed the random generator.
@@ -29,16 +29,18 @@ int main(){
     int z = 0;
     int s = 0;
     int y = 0;
-char caracter[100];    
+    int p = 0;
+char letra[40];
+  
     int q = 0;
+    int l = 0;
 int palabralargo;
 int largocaracter;
-const char* nombre[20];
+const char nombre[20];
 char largo[q];
 char largo_2[q];
     const char* palabra_elegida = get_random_word();  
 inicio:
-system("cls"); 
 printf("1. Empezar Juego\n");
 printf("2. Ver Instrucciones\n");
 printf("3. About\n");
@@ -46,7 +48,7 @@ printf("4. Salir\n");
 scanf("%d", &x);
 if (x >= 1 && x <=4){    
 if(x == 1){
-printf("Introduzca su nombre (20 letras maximo)\n");
+printf("Ingrese nombre del jugador\n");
 scanf("%s", &nombre);
 printf("Jugador: %s\n", nombre);
 printf("Intentos: %d/10\n", s);
@@ -56,31 +58,10 @@ for(; q<palabralargo; q++){
 largo[q] = '_';
 printf("%c", largo[q]);
 }
-juego:
-
-scanf("%s", caracter);
-largocaracter = strlen(caracter);
-if(largocaracter == 1){
-for(int p = 0; p < palabralargo; p++){
-if(caracter[0] == palabra_elegida[p]){
-largo[p] = caracter[0];
-p = p*0;
-goto otro;
-}
-else{
-p = p*0;
-printf("Caracter incorrecto, introduzca otro\n");
-s++;
-goto perdio;
+printf("\n\n");
+goto juego;
 
 }
-
-}
-}
-}
-
-
-
 else if(x == 2){
 printf("El objetivo del juego es: Adivinar la palabra que le mostraremos\n");
 goto inicio;
@@ -89,40 +70,77 @@ else if(x == 3){
 printf("Hecho por Pablo Velasquez y Carmen Xiloj\n");
 printf("Correo electronico: pablovelasquez@ufm.edu y carmenxiloj@ufm.edu\n");
 goto inicio;
-
-
 }
 else{
 exit(0);    
 }
-
-
-
+juego:
+printf("Ingrese letra/palabra: ");
+scanf("%s", letra);
+largocaracter = strlen(letra);
+ if(largocaracter == 1){
+for(; p < palabralargo; p++){
+if(letra[0] == palabra_elegida[p]){
+largo[p] = letra[0];
+p = p*0;
+z++;
+goto otro;
 }
+}
+p=p*0;
+printf("Caracter incorrecto, introduzca otro\n");
+s++;
+goto perdio;
+}
+else{	
+contador:
+for(int a = 0; a<largocaracter;){
+for(; l<palabralargo; l++){
+if(letra[a] == palabra_elegida[l]){
+largo[l] = letra[a];
+l = l*0;
+a++;
+z++;
+goto contador;
+}
+}
+s++;
+a++;
+printf("Caracter incorrecto\n");  
+}
+goto perdio;
+}
+
+
 otro:
+printf("Jugador: %s\n", nombre);
+printf("Intentos: %d/10\n", s);
+printf("Aciertos: %d\n", z);
 for(; y<palabralargo; y++){
 printf("%c", largo[y]);
-
-
 }
+printf("\n\n");
+
 y = y*0;
 goto gano;
-
 perdio:
-if(s == 10){
+if(s ==> 10){
     system("cls");
-printf("###### GAME OVER ######");
+printf("###### GAME OVER ######\n");
 printf("Palabra a adivinar: %s\n", palabra_elegida);
 printf("Jugador: %s\n", nombre);
 printf("Intentos 10/10\n");
 return 0;    
 }
+printf("Jugador: %s\n", nombre);
+printf("Intentos: %d/10\n", s);
+printf("Aciertos: %d\n", z);
 for(; y<palabralargo; y++){
 printf("%c", largo[y]);
 }
+printf("\n\n");
 y=y*0;
-goto juego;
-
+goto gano;
 gano:
 if(z == palabralargo){
 printf("###### GANO ######\n");
@@ -132,4 +150,5 @@ printf("Intentos %d/10", s);
 return 0;    
 }
 goto juego;
+}
 }
