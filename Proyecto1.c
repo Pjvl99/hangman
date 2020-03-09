@@ -10,7 +10,7 @@ void clearscreen()
 const char* get_random_word(void);
 const char *word_collection[MAX_WORDS]= {
                     "almuerzo","hola","estufa","banco","escrito",
-                    "mariposa","librete","dragon","libertad",
+                    "mariposa","cuaderno","dragon","libertad",
                     "perro","dar","amor","hack","madre",
                     "padre","oso","diez","desayuno","cena",
                     "cobra","rosas","raul","terminar"
