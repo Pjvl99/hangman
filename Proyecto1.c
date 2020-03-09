@@ -12,7 +12,7 @@ const char *word_collection[MAX_WORDS]= {
                     "almuerzo","hola","estufa","banco","escrito",
                     "mariposa","trunks","dragon","libertad",
                     "perro","dar","amor","hack","madre",
-                    "padre","pera","veinte","desayuno","cena",
+                    "padre","pera","diez","desayuno","cena",
                     "cobra","rosa","raul","terminar"
                     };
 const char* get_random_word(void){

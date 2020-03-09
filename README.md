@@ -1,42 +1,26 @@
 # hangman
 
-Esta es la base para su proyecto
 
-# Para inicar realice [FORK](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
+Linux/mac:
 
-DEBE HACER UN [FORK DEL PROYECTO!](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
+Copiar y pegar en su consola de comandos la siguiente instruccion:
 
+make run Proyecto1.c
 
-# Como correr su proyecto
+Windows:
 
-<!---
-Llene esta seccion con "como correr su proyecto"
--->
+Puede copiar y pegar nuestro codigo en esta página: https://www.onlinegdb.com/online_c_compiler
 
-<!---
-yo le proveo una forma facil de compilar y es usando 'make'
-
-make => compilara su codigo
-
-make run => compilara su codigo y lo correra
-
-! OJO que solo funcionaria en systemas *NIX, No se si Windows seria soportado.
---->
-
-
-```
-puede utilizar una seccion de codigo
-```
 
 # Extra Information
 
-```
-Agregue aqui lo que usted considere como extra
-```
+1. Iniciara el juego
+2. Vera las instrucciones
+3. Vera quienes lo hicieron
+4. Saldra del juego
 
 # About
+Hecho por Pablo Josué Velásquez López - pablovelasquez@ufm.edu
 
-<!---
-Llene esta seccion con "Su nombre y correo"
---->
+Carmen María de Lourdes Xiloj Pol - carmenxiloj@ufm.edu 
 
