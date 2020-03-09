@@ -10,10 +10,10 @@ void clearscreen()
 const char* get_random_word(void);
 const char *word_collection[MAX_WORDS]= {
                     "almuerzo","hola","estufa","banco","escrito",
-                    "mariposa","trunks","dragon","libertad",
+                    "mariposa","librete","dragon","libertad",
                     "perro","dar","amor","hack","madre",
-                    "padre","pera","diez","desayuno","cena",
-                    "cobra","rosa","raul","terminar"
+                    "padre","oso","diez","desayuno","cena",
+                    "cobra","rosas","raul","terminar"
                     };
 const char* get_random_word(void){
     // seed the random generator.
@@ -124,7 +124,7 @@ printf("\n\n");
 y = y*0;
 goto gano;
 perdio:
-if(s ==> 10){
+if(s >= 10){
     system("cls");
 printf("###### GAME OVER ######\n");
 printf("Palabra a adivinar: %s\n", palabra_elegida);
